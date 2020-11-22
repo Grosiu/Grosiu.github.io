@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <nav class="nav">
+        <div class="nav__logo">Grosiu</div>
+        <div class="nav__menu">menu </div>
+    </nav>
+    <!--Pomyślałem, że jak nav ma to tutaj też dam klase-->
+    <main class="main-wrapper">
+
+        <section class="hero">
+            <h1 class="hero__title">GROSIU</h1>
+            <p class="hero__desc">
+                Historia człowieka, który będąc kalistenikiem zmaga się z przeciwnościami losu.
+            </p>
+        </section>
+
+        <section class="about-me">
+            <div class="about-me__wrapper">
+                <h2 class="about-me__title"> O mnie </h2>
+                <div class="about-me__description">
+                    My name is Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at suscipit dolor. Fusce
+                    neque
+                    enim, pharetra iaculis sapien id, pretium facilisis lorem. Aliquam in metus eu magna laoreet
+                    faucibus
+                    non et quam. Integer purus nunc, porta quis erat sit amet, egestas consequat mi. Integer semper,
+                    massa
+                    id fringilla pellentesque, massa massa consequat enim, eget viverra quam leo et massa. Praesent
+                    pulvinar
+                    velit sem, at ultrices enim tristique vel. Integer interdum magna vitae elit porta gravida. Aliquam
+                    tristique leo in ullamcorper tempor. Quisque placerat felis vel euismod rhoncus. Nulla dignissim non
+                    nisi quis rutrum.
+
+                </div>
+            </div>
+        </section>
+        <!--No i jak dodałem w mainie klase to tutaj też dodałem i nie było problemu z nazwa -->
+        <hr class="main-wrapper__line">
+
+        <h2 class="main-wrapper__items-title">Możliwości współpracy:</h2>
+
+        <section class="offers-container">
+            <div class="offers-container__item">
+                <img src="images/services/training.png" class="offers-container__icon">
+                <div class="offers-container__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                    hic earum ex eius, rem nobis cum, aliquam numquam est reiciendis cupiditate. Temporibus tempora
+                    corrupti praesentium quo, molestias non debitis esse.</div>
+            </div>
+
+            <div class="offers-container__item">
+                <img src="images/services/diet.png" class="offers-container__icon">
+                <div class="offers-container__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Exercitationem cupiditate, nemo ab quos, blanditiis accusantium perspiciatis veritatis omnis illo
+                    eaque quo, quod facere et velit dolorum numquam soluta voluptates provident?</div>
+            </div>
+
+            <div class="offers-container__item">
+                <img src="images/services/personal.png" class="offers-container__icon">
+                <div class="offers-container__desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi fuga
+                    aliquid officia, adipisci consequuntur magnam aspernatur. Rem tenetur tempora velit quam, vero alias
+                    magnam unde, reiciendis natus aspernatur quibusdam consequuntur.</div>
+            </div>
+        </section>
+        <hr class="main-wrapper__line">
+        <!-- Pozmieniałem ten contact form troche i sie zastanawiam czy to jest okej, popatrz na css XD sporo jest tych elementów i nie ująłem tam wszystkich klas, które tutaj dodałem i to chyba nie jest błąd? -->
+        <section class="contact-wrapper">
+
+            <h2 class="contact-wrapper__title">
+                Kontakt
+            </h2>
+
+            <p class="contact-wrapper__desc">
+                Jeżeli masz jakieś pytania, chciałbyś rozpocząć ze mną współracę, to wal
+                śmiało! :)
+            </p>
+
+            <form class="contact-form">
+
+                <div class="contact-form__items-container">
+                    <label for="mail" class="contact-form__label"></label>
+                    <input type="text" placeholder="E-mail: " class="contact-form__input contact-form__input--mail">
+                </div>
+
+                <div class="contact-form__items-container">
+                    <label for="content" class="contact-form__label"></label>
+                    <textarea type="text" placeholder="Wiadomość: "
+                        class="contact-form__input contact-form__input--text"></textarea>
+                </div>
+
+                <div class="contact-form__items-container">
+                    <input type="submit" value="Wyślij" class="contact-form__btn">
+                </div>
+
+            </form>
+        </section>
+
+
+    </main>
+    <!--A i footerek też będzie miał klasy itd, jak juz bede miał pomysł co z nim zrobićg-->
+    <footer class="site-footer">
+        <h2 class="site-footer__title">Grosiu</h2>
+        <div class="site-footer__wrapper">
+            <a href=""><img src="images/socials/facebook.png"></a>
+            <a href=""><img src="images/socials/instagram.png" alt=""></a>
+        </div>
+        <p class="site-footer__desc">&copy;2020 Kamil Grochmal. All rights reserved</p>
+    </footer>
+</body>
+
+</html>

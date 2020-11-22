@@ -1,0 +1,208 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Variables
+*  2.0 - Mixins
+*  3.0 - Global
+*  4.0 - Navigation
+*  5.0 - Hero
+*  6.0 - Main
+*    6.1 - About me
+*    6.2 - Offers
+*    6.3 - Contact form
+*  7.0 - Footer
+*/
+/*
+    ### VARIABLES ###
+*/
+/*
+    ### MIXINS ###
+*/
+/*
+    ### GLOBAL ###
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+/*
+    ### NAVIGATION ###
+*/
+.nav {
+  background-color: #111111;
+  height: 5%;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  font-size: 1rem;
+}
+.nav__logo, .nav__menu {
+  display: flex;
+  text-transform: uppercase;
+}
+
+/*
+    ### HERO IMAGE ###
+*/
+.hero {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(52, 48, 48, 0.6082633737) 0%, rgba(142, 62, 62, 0.5970588919) 48%, rgba(208, 51, 51, 0.2245098723) 100%), url(../images/hero/background.JPG) center/cover no-repeat;
+  min-width: 300px;
+  max-width: 100%;
+  padding: 30px;
+  color: #5f4d4d;
+  min-height: 950px;
+}
+.hero__title {
+  font-size: 4rem;
+  color: whitesmoke;
+  text-shadow: 2px 2px 1px black;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.hero__desc {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  text-shadow: 2px 2px 1px black;
+}
+
+/*
+    ### MAIN CONTENT ###
+*/
+.main-wrapper {
+  background-color: whitesmoke;
+}
+.main-wrapper__items-title {
+  font-size: 2.25rem;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+.main-wrapper__line {
+  height: 1px;
+  color: #5f4d4d;
+  opacity: 0.1;
+}
+
+.about-me {
+  background-color: whitesmoke;
+  min-height: 500px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.about-me__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+.about-me__description {
+  padding: 30px 15px;
+  font-size: 1.5rem;
+}
+
+.offers-container {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 450px;
+}
+.offers-container__item {
+  flex: 1;
+  margin: 25px 45px 25px 45px;
+  padding: 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 2px #00000044;
+  text-align: center;
+}
+.offers-container__desc {
+  padding: 35px 25px;
+}
+
+.contact-wrapper {
+  padding-top: 25px;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  min-width: 50%;
+}
+.contact-wrapper__title {
+  padding-bottom: 25px;
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.contact-form {
+  padding: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 60%;
+  margin: 0 auto;
+}
+.contact-form__items-container {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form__input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font: 1rem "Raleway", sans-serif;
+}
+.contact-form__input--text {
+  min-height: 200px;
+  resize: none;
+}
+.contact-form__btn {
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font: inherit;
+  text-transform: uppercase;
+}
+.contact-form__btn:hover {
+  background-color: gray;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+/*
+    ### FOOTER ###
+*/
+.site-footer {
+  min-height: 20px;
+  background-color: #111111;
+  color: #fff;
+  text-align: center;
+  font: inherit;
+  min-height: 100px;
+}
+.site-footer__wrapper {
+  padding: 10px;
+}
+.site-footer__desc {
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+.site-footer__title {
+  text-shadow: 2px 2px 1px black;
+  font-size: 2rem;
+  padding-top: 10px;
+}

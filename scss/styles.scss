@@ -1,0 +1,266 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Variables
+*  2.0 - Mixins
+*  3.0 - Global
+*  4.0 - Navigation
+*  5.0 - Hero
+*  6.0 - Main
+*    6.1 - About me
+*    6.2 - Offers
+*    6.3 - Contact form
+*  7.0 - Footer
+*/
+
+//---------------------------------------------------------
+
+/*
+    ### VARIABLES ###
+*/
+
+// Colors
+
+$navfootbg: rgb(17,17,17);
+$lightcolor: rgb(245,245,245);
+$herocolor: rgb(95, 77, 77);
+$navfootcolor: #fff;
+
+// Fonts
+
+$mainfont: 'Raleway', sans-serif;
+$heroheaderfs: 4rem;
+$headerfs: 2.25rem;
+$descfs: 1.5rem;
+
+// Devices
+
+$phone: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+
+/*
+    ### MIXINS ###
+*/
+
+@mixin reset {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    ### GLOBAL ###
+*/
+
+*, *::before, *::after {
+    @include reset()
+}
+
+html, body {
+    height: 100%;
+    font-family: $mainfont;
+}
+
+/*
+    ### NAVIGATION ###
+*/ 
+
+.nav {
+    background-color: $navfootbg;
+    height: 5%;
+    width: 100%;
+    color: $navfootcolor;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    position: fixed;
+    font-size: 1rem;
+
+    &__logo, &__menu {
+        display: flex;
+        text-transform: uppercase; 
+    }
+}
+
+/*
+    ### HERO IMAGE ###
+*/
+
+.hero {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(52,48,48,0.6082633737088585) 0%, rgba(142,62,62,0.5970588919161415) 48%, rgba(208,51,51,0.22450987230829833) 100%),
+    url(../images/hero/background.JPG) center/cover no-repeat;
+    min-width: 300px;
+    max-width: 100%;
+    padding: 30px;
+    color: $herocolor;
+    min-height: 950px;
+
+    &__title {
+        font-size: $heroheaderfs; 
+        color: $lightcolor;
+        text-shadow: 2px 2px 1px black;
+        padding-top: 50px ;
+        padding-bottom: 20px;
+    }
+    &__desc {
+        font-size: $descfs;
+        color: $lightcolor;
+        text-shadow: 2px 2px 1px black;
+    }
+    @media screen (min-width:$phone) {
+        
+    }
+}
+
+/*
+    ### MAIN CONTENT ###
+*/
+
+.main-wrapper {
+    background-color: $lightcolor;
+
+    &__items-title {
+        font-size: $headerfs;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        font-weight: 400;
+    }
+    &__line {
+        height: 1px;
+        color: $herocolor;
+        opacity: .1;
+    }
+}
+
+
+//   ### ABOUT ME ###
+
+
+.about-me {
+    background-color: $lightcolor;
+    min-height: 500px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    &__title {
+        font-size: $headerfs;
+        font-weight: 400;
+    }
+    &__description {
+        padding: 30px 15px;
+        font-size: $descfs;
+    }
+}
+
+
+//   ### OFFERS ###
+
+
+.offers-container {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 450px;
+
+    &__item {
+        flex:1;
+        margin:25px 45px 25px 45px;
+        padding: 30px;
+        font-size: 1rem;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 4px 4px 2px #00000044;
+        text-align: center;
+    }
+    &__desc {
+        padding: 35px 25px;
+    }
+}
+
+
+//  ### CONTACT FORM ###
+
+
+.contact-wrapper {
+    padding-top: 25px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    min-width:50%;
+
+    &__title {
+        padding-bottom: 25px;
+        font-size: $headerfs;
+        font-weight: 400;
+    }
+}
+
+.contact-form {
+    padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    width:60%;
+    margin: 0 auto;
+
+    &__items-container {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input {
+        flex: 1;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        font: 1rem 'Raleway', sans-serif;
+    }
+    &__input--text {
+        min-height: 200px;
+        resize: none;
+    }
+    &__btn {
+        padding: 15px;
+        margin: 0 auto;
+        border-radius: 15px;
+        border: 1px solid gray;
+        font: inherit;
+        text-transform: uppercase;
+        &:hover {
+            background-color: gray;
+            color:$lightcolor;
+            cursor: pointer;
+        }
+    }
+}
+
+/*
+    ### FOOTER ###
+*/
+
+.site-footer {
+    min-height: 20px;
+    background-color: $navfootbg;
+    color: $navfootcolor;
+    text-align: center;
+    font: inherit;
+    min-height: 100px;
+
+    &__wrapper {
+        padding:10px;
+    }
+    &__desc {
+        padding-bottom: 10px;
+        font-size: $descfs;
+    }
+    &__title {
+        text-shadow: 2px 2px 1px black;
+        font-size: 2rem;
+        padding-top:10px ;
+    }   
+}
