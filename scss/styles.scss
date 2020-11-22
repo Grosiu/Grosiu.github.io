@@ -287,4 +287,9 @@ body {
         height: 8%;
         font-size: 1.5rem;
     }
+    .hero {
+        text-align: center;
+        background: linear-gradient(90deg, rgba(52, 48, 48, 0.6082633737088585) 0%, rgba(142, 62, 62, 0.5970588919161415) 48%, rgba(208, 51, 51, 0.22450987230829833) 100%),
+            url(../images/hero/bg_phone.JPG) center/cover no-repeat;
+    }
 }

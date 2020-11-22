@@ -272,5 +272,10 @@ body {
     height: 8%;
     font-size: 1.5rem;
   }
+  .hero {
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(52, 48, 48, 0.608263)), color-stop(48%, rgba(142, 62, 62, 0.597059)), to(rgba(208, 51, 51, 0.22451))), url(../images/hero/bg_phone.JPG) center/cover no-repeat;
+    background: linear-gradient(90deg, rgba(52, 48, 48, 0.608263) 0%, rgba(142, 62, 62, 0.597059) 48%, rgba(208, 51, 51, 0.22451) 100%), url(../images/hero/bg_phone.JPG) center/cover no-repeat;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
