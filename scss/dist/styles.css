@@ -21,13 +21,16 @@
 /*
     ### GLOBAL ###
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: "Raleway", sans-serif;
 }
@@ -205,4 +208,14 @@ html, body {
   text-shadow: 2px 2px 1px black;
   font-size: 2rem;
   padding-top: 10px;
+}
+
+/*
+    ### Media Queries ###
+*/
+@media (max-width: 500px) {
+  .nav {
+    height: 8%;
+    font-size: 1.5rem;
+  }
 }
